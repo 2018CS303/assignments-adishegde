@@ -1,8 +1,8 @@
 # Assignment 2_1 - Jenkins
 
 ## Installing Blue Ocean
-- Go  `Manage Jenkins > Manage Plugins`
-- Choose the `Available` tab and search for `blue ocean`
+- Go to  `Manage Jenkins > Manage Plugins`.
+- Choose the `Available` tab and search for `blue ocean`.
 - Select the `Blue Ocean (BlueOcean Aggregator)` plugin. The docs recommend 
 installing only this one since all other Blue Ocean plugins will be installed 
 automatically (as dependencies).
@@ -12,11 +12,11 @@ automatically (as dependencies).
 ## Building a private GitHub Repository
 (A `freestyle project` has been used here)
 
-- Create a new freestyle project
+- Create a new freestyle project.
 - Under `Source Code Management` select `Git`.
-- Add the private repository's URL in the `Repository URL` input box.
-- Since the repository is private Jenkins will not be able to access the repo
-without credentials. Click on `Add` button next to `Credential` input box. Choose
+- Add the private repository's URL in the `Repository URL` text box.
+- Since the repository is private, Jenkins will not be able to access the repo
+without credentials. Click on `Add` button next to `Credential` text box. Choose
 `Jenkins` as the Credential Provider in the dropdown menu. A popup should appear
 asking for the details.
 - Choose `Username with Password` under the `Kind` option. Enter GitHub username
@@ -25,8 +25,6 @@ and password under their respective text boxes.
 dropdown menu that appears next to `Credentials` label.
 - Now the private repository can be used with Jenkins like any other 
 repository.
-
-In this case I've used a basic shell script to test a simple addition program.
 
 ## Using Git SCM Poll
 (The previous project has been used here)
