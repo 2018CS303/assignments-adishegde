@@ -1,1 +1,3 @@
 *.pages
+Pipfile
+Pipfile.lock
